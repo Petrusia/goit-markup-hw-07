@@ -1,0 +1,61 @@
+/*Header section*/
+.header {
+  border-bottom: 1px solid $whisper-color;
+}
+
+.header-nav,
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.link.header__logo {
+  color: $black-color;
+}
+
+.header__logo--blue {
+  color: $dodger-blue-color;
+}
+
+.site-nav__list {
+  display: flex;
+  margin-left: 93px;
+  list-style: none;
+
+  /*gap: 50px;*/
+}
+
+.contacts-nav {
+  display: flex;
+  margin-left: auto;
+  list-style: none;
+
+  /*gap: 50px;*/
+}
+
+.site-nav__item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  .link {
+    padding: 32px 0;
+  }
+}
+
+.contacts-nav__link {
+  display: flex;
+  color: $grey-color;
+  align-items: center;
+}
+
+.contacts-nav__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
